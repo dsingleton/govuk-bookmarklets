@@ -4,8 +4,15 @@
   <title>GOV.UK Bookmarklets</title>
   <style type="text/css">
   body {
-    font: medium/1.4 Helvetica, Arial, sans-serif;
+    font: medium/1.5 Helvetica, Arial, sans-serif;
+    margin: 2em;
     max-width: 50em;
+  }
+
+  li a {
+    margin-top: 1em;
+    display: block;
+    font-size: 1.5em;
   }
   </style>
 </head>
@@ -15,26 +22,26 @@
 
   <ol>
     <li>
-      <a href="javascript:(function()%7Balert(%24('meta%5Bname%5E%3D%22govuk%3A%22%5D').get().map(function(meta)%20%7B%20return%20meta.name.split('%3A')%5B1%5D%20%2B%20'%3A%20%22'%20%2B%20meta.content%20%2B%20'%22'%7D).join(%22%5Cn%5Cn%22))%7D)()">Gov-a-lytics</a> - Shows all the analytics values for a GOV.UK page, including <em>format</em> and <em>rendering-app</em>.
+      <a href="javascript:(function()%7Balert(%24('meta%5Bname%5E%3D%22govuk%3A%22%5D').get().map(function(meta)%20%7B%20return%20meta.name.split('%3A')%5B1%5D%20%2B%20'%3A%20%22'%20%2B%20meta.content%20%2B%20'%22'%7D).join(%22%5Cn%5Cn%22))%7D)()">Gov-a-lytics</a> Shows all the analytics values for a GOV.UK page, including <em>format</em> and <em>rendering-app</em>.
     </li>
 
     <li>
-      <a href='javascript:(function()%7Bdocument.location %3D "https%3A%2F%2Fpublisher.preview.alphagov.co.uk%2F%3Fdirection%3Dasc%26list%3Dpublished%26sort%3Dslug%26string_filter%3D" %2B document.location.pathname.substr(1)%7D)()'>goto-publisher</a> - Search for this artifact in publisher, to see the published editions/editorial content.
+      <a href='javascript:(function()%7Bdocument.location %3D "https%3A%2F%2Fpublisher.preview.alphagov.co.uk%2F%3Fdirection%3Dasc%26list%3Dpublished%26sort%3Dslug%26string_filter%3D" %2B document.location.pathname.substr(1)%7D)()'>goto-publisher</a> Searches for this artifact in publisher, to see the published editions/editorial content.
     </li>
 
     <li>
-      <a href='javascript:(function()%7Bdocument.location%20%3D%20%22https%3A%2F%2Fpanopticon.preview.alphagov.co.uk%2Fartefacts%3Futf8%3D%25E2%259C%2593%26section%3D%26specialist_sector%3D%26kind%3D%26state%3D%26search%3D%22%20%2B%20document.location.pathname.substr(1)%7D)()'>goto panopticon</a> - Search for this artifact in panopticon. Useful for seeing what format something is in, or which application is responsible for publishing/displaying it.
+      <a href='javascript:(function()%7Bdocument.location%20%3D%20%22https%3A%2F%2Fpanopticon.preview.alphagov.co.uk%2Fartefacts%3Futf8%3D%25E2%259C%2593%26section%3D%26specialist_sector%3D%26kind%3D%26state%3D%26search%3D%22%20%2B%20document.location.pathname.substr(1)%7D)()'>goto panopticon</a> Searches for this artifact in panopticon. Useful for seeing what format something is in, or which application is responsible for publishing/displaying it.
     </li>
 
     <li>
-      <a href='javascript:(function()%7Bwindow.location %3D window.location.href.replace(window.location.hostname%2C "www.gov.uk")%7D)()'>env-production</a> - View the current page on live/production
+      <a href='javascript:(function()%7Bwindow.location %3D window.location.href.replace(window.location.hostname%2C "www.gov.uk")%7D)()'>env-production</a> Goes to the current page on the <em>live/production</em> environment
     </li>
 
     <li>
-      <a href='javascript:(function()%7Bwindow.location %3D window.location.href.replace(window.location.hostname%2C "www.dev.gov.uk").replace(%2F%5Ehttps%2F%2C"http")%7D)()'>env-dev</a> - View the current page on your local dev environment
+      <a href='javascript:(function()%7Bwindow.location %3D window.location.href.replace(window.location.hostname%2C "www.dev.gov.uk").replace(%2F%5Ehttps%2F%2C"http")%7D)()'>env-dev</a> Goes to the current page on your local <em>dev</em> environment
     </li>
     <li>
-      <a href='javascript:(function()%7Bwindow.location%20%3D%20window.location.href.replace(window.location.hostname%2C%20%22www.preview.alphagov.co.uk%22)%7D)()'>env-preview</a> - View the current page on the preview environment
+      <a href='javascript:(function()%7Bwindow.location%20%3D%20window.location.href.replace(window.location.hostname%2C%20%22www.preview.alphagov.co.uk%22)%7D)()'>env-preview</a> - Goes to the current page on the <em>preview</em> environment
     </li>
   </ol>
 </body>
