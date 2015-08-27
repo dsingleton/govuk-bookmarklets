@@ -43,5 +43,9 @@
     <li>
       <a href='javascript:(function()%7Bwindow.location%20%3D%20window.location.href.replace(window.location.hostname%2C%20%22www.preview.alphagov.co.uk%22)%7D)()'>env-preview</a> - Goes to the current page on the <em>preview</em> environment
     </li>
+
+    <li>
+      <a href="javascript:(function()%7Bvar%20req%20%3D%20new%20XMLHttpRequest()%3Breq.open('GET'%2C%20document.location%2C%20false)%3Breq.send(null)%3Bdocument.location%3Dreq.getAllResponseHeaders().match('Link%3A%20%3C(.*)%3E%3B%20rel%3D%22up%22')%5B1%5D%7D)()">PDF to Web</a> - Use on a Whitehall PDF to go to the page of publication it was uploaded to.
+    </li>
   </ol>
 </body>
