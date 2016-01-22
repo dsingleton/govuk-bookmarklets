@@ -51,5 +51,8 @@
     <li>
       <a href='javascript:(function()%7Bwindow.location%20=%20window.location.href.replace(window.location.hostname,%20%22www.preview.alphagov.co.uk%22)%20+%20%22.txt%22%7D)()'>See Govspeak</a> - Goes to the preview of a Smart Answer and shows its Govspeak markup. It only works on outcome pages.
     </li>
+    <li>
+      <a href='javascript:(function(){var newcss="[class^=\"govuk-\"] { background:rgba(255,0,0,0.25);}";if("\v"=="v"){document.createStyleSheet().cssText=newcss}else{var tag=document.createElement("style");tag.type="text/css";document.getElementsByTagName("head")[0].appendChild(tag);tag[(typeof document.body.style.WebkitAppearance=="string")?"innerText":"innerHTML"]=newcss}})();'>Highlight Components</a> - Highlights where GOV.UK Components are used on the page.
+    </li>
   </ol>
 </body>
