@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,6 +24,11 @@
   <ol>
     <li>
       <a href="javascript:(function()%7Balert(%24('meta%5Bname%5E%3D%22govuk%3A%22%5D').get().map(function(meta)%20%7B%20return%20meta.name.split('%3A')%5B1%5D%20%2B%20'%3A%20%22'%20%2B%20meta.content%20%2B%20'%22'%7D).join(%22%5Cn%5Cn%22))%7D)()">Gov-a-lytics</a> Shows all the analytics values for a GOV.UK page, including <em>format</em> and <em>rendering-app</em>.
+    </li>
+
+
+    <li>
+      <a href="javascript:(function()%7Blocation.href%20%3D%20location.href.replace('.gov.uk%2F'%2C%20'.gov.uk%2Fapi%2Fcontent%2F')%7D)()">goto-content-store</a> Shows the content-store representation of the <em>current URL</em>
     </li>
 
     <li>
